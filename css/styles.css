@@ -1,0 +1,149 @@
+@import 'https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap';
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100%; 
+    height: 100vh;
+    background: black;
+}
+
+.square--one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background:rgba(255, 255, 255, .8) ;
+    z-index:3;
+    -webkit-box-shadow: 2px 9px 13px -4px rgba(0,0,0,0.34);
+    -moz-box-shadow: 2px 9px 13px -4px rgba(0,0,0,0.34);
+    box-shadow: 2px 9px 13px -4px rgba(0,0,0,0.34);
+    
+}
+.square--one img { 
+    width: 100px;
+    padding-left: 60px;
+}
+.square--two {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background:url('http://monsterbranding.com.mx/images/misty.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.square--three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    height:95% ;
+    background: url('http://monsterbranding.com.mx/images/mountain.jpg') ;
+    background-size: cover;
+    background-position: center;
+
+}
+.square--three > p {
+font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+bottom: 0;
+font-size: 12px;
+}
+.sub-square-four {
+    position: absolute;
+    top: 5%;
+    width: 90%;
+    height: 200px;
+    background: url('http://monsterbranding.com.mx/images/mountain-view.jpg');
+    z-index: 2;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 2px 9px 13px -4px rgba(0,0,0,0.34);
+    -moz-box-shadow: 2px 9px 13px -4px rgba(0,0,0,0.34);
+    box-shadow: 2px 9px 13px -4px rgba(0,0,0,0.34);
+}
+
+.sub-square-five{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    right: 10%;
+    background:rgba(0, 0, 0, .8) ;
+    height: 60vh;
+    z-index: 1;
+    padding: 60px;
+    color: white;
+}
+
+.sub-square-five p strong{
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 65px;
+    line-height: 60px;
+    z-index: 4;
+}
+
+.sub-square-five button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}.sub-square-five button:hover {
+    background: white;
+    color: black;
+    transition: .8s;
+}
+.sub-square-six{
+
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+    height: 200px;
+    background: url('http://monsterbranding.com.mx/images/trees.jpg') ;
+    background-position: center bottom;
+    background-size: cover;
+    border: 2px solid white;
+
+}
+
+@media (max-width: 829px) {
+
+    .sub-square-four{
+        top:0%;
+    }
+    .sub-square-five{
+        width: 90%;
+        right: 0;
+        position: unset;
+        padding: 40px;
+    }
+}
